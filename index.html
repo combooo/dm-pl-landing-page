@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="">
+    <title>Digital Win</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
+    <!-- menu bar -->
     <nav class="menu">
         <div class="menu__container">
             <img class="menu__logo" src="./images/logo.png" alt="logo">
+            <div class="burger">
+                <span class="burger__line burger__line-first"></span>
+                <span class="burger__line burger__line-second"></span>
+                <span class="burger__line burger__line-third"></span>
+                <span class="burger__line burger__line-fourth"></span>
+            </div>
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="#" class="menu__link">W TYM POMOGĘ</a>
+                    <a href="#services" class="menu__link">W TYM POMOGĘ</a>
                 </li>
                 <li class="menu__item">
                     <a href="#" class="menu__link">CO ZYSKUJESZ</a>
@@ -24,12 +33,15 @@
                 <li class="menu__item">
                     <a href="#" class="menu__link">MOJE BIO</a>
                 </li>
+                <li class="menu__item">
+                    <a class="menu__button" href="#">BEZPŁATNA WYCENA</a>
+                </li>
             </ul>
-            <a class="menu__button" href="#">BEZPŁATNA WYCENA</a>
+
+
         </div>
     </nav>
     <div class="wrapper">
-        
         <header class="header">
             <div class="row">
                 <div class="photo">
@@ -64,104 +76,106 @@
         </header>
     </div>
         <main>
-            <div class="section-header">
+            <div class="section-header" id="services">
                 <h2 class="section-header__title">W jaki sposób mogę Ci pomóć?</h2>
             </div>
     <div class="services-background">
-            <section class="services wrapper">
-                <p class="services__subtitle">POZNAJ MOJE USŁUGI</p>
-                <h3 class="services__title">Strategia marketingowa dla Twojej firmy</h3>
+            <section class="services">
+                <div class="wrapper">
+                    <p class="services__subtitle">POZNAJ MOJE USŁUGI</p>
+                    <h3 class="services__title">Strategia marketingowa dla Twojej firmy</h3>
 
-                <div class="grid">
-                    <div class="grid__item">
-                        <h4 class="grid__item-title">Social Media</h4>
-                        <ul class="grid__list">
-                            <li class="grid__list-item">
-                                <span class="marker"></span> <span class="list-content">
-                                    Prowadzenie kont na portalach<br>
-                                FB, IG, TT, TikTok, Li, Yt
-                                </span>
-                            </li>
-                            <li class="grid__list-item">
-                                <span class="marker"></span> <span class="list-content">
-                                    Prowadzenie kampanii Facebook Ads
-                                </span>
-                            </li>
-                            <li class="grid__list-item">
-                                <span class="marker"></span> <span class="list-content">
-                                    Strategie obecności marki w mediach społecznościowych
-                                </span>
-                            </li>
-                            <li class="grid__list-item">
-                                <span class="marker"></span> <span class="list-content">
-                                    Audyty stron i konsultacje social media
-                                </span>
-                            </li>
-                            <li class="grid__list-item">
-                                <span class="marker"></span> <span class="list-content">
-                                    Dedykowane szkolenia social media
-                                </span>
-                            </li>
-                            <li class="grid__list-item">
-                                <span class="marker"></span> <span class="list-content">
-                                    Koncepcyjne kreatywne kampanii
-                                </span>
-                            </li>
-                            <li class="grid__list-item">
-                                <span class="marker"></span> <span class="list-content">
-                                    Transmisje live, konkursy
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid__item">
-                        <h4 class="grid__item-title">Content Marketing</h4>
-                        <ul class="grid__list">
-                            <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
-                                Treści na strony internetowe, opisy produktów</span>
-                            </li>
-                            <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
-                                Prowadzenie blogów firmowych</span>
-                            </li>
-                            <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
-                                Storytelling</span>
-                            </li>
-                            <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
-                                E-booki</span>
-                            </li>
-                            <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
-                                Treści do newsletterów</span>
-                            </li>
-                            <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
-                                Strategie content marketingowe</span>
-                            </li>
-                            <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
-                                Niestandardowe działania<br>
-                                (np. treści ulotek)</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid__item">
-                        <h4 class="grid__item-title">Google Ads</h4>
-                        <ul class="grid__list">
-                            <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
-                                Kampanie w searchu</span>
-                            </li>
-                            <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
-                                Kampanie display i video</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid__item">
-                        <h4 class="grid__item-title">Naming</h4>
-                        <ul class="grid__list">
-                            <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
-                                Startujące firmy</span>
-                            </li>
-                            <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
-                                Nowe produkty</span>
-                            </li>
-                        </ul>
+                    <div class="grid">
+                        <div class="grid__item">
+                            <h4 class="grid__item-title">Social Media</h4>
+                            <ul class="grid__list">
+                                <li class="grid__list-item">
+                                    <span class="marker"></span> <span class="list-content">
+                                        Prowadzenie kont na portalach<br>
+                                    FB, IG, TT, TikTok, Li, Yt
+                                    </span>
+                                </li>
+                                <li class="grid__list-item">
+                                    <span class="marker"></span> <span class="list-content">
+                                        Prowadzenie kampanii Facebook Ads
+                                    </span>
+                                </li>
+                                <li class="grid__list-item">
+                                    <span class="marker"></span> <span class="list-content">
+                                        Strategie obecności marki w mediach społecznościowych
+                                    </span>
+                                </li>
+                                <li class="grid__list-item">
+                                    <span class="marker"></span> <span class="list-content">
+                                        Audyty stron i konsultacje social media
+                                    </span>
+                                </li>
+                                <li class="grid__list-item">
+                                    <span class="marker"></span> <span class="list-content">
+                                        Dedykowane szkolenia social media
+                                    </span>
+                                </li>
+                                <li class="grid__list-item">
+                                    <span class="marker"></span> <span class="list-content">
+                                        Koncepcyjne kreatywne kampanii
+                                    </span>
+                                </li>
+                                <li class="grid__list-item">
+                                    <span class="marker"></span> <span class="list-content">
+                                        Transmisje live, konkursy
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid__item">
+                            <h4 class="grid__item-title">Content Marketing</h4>
+                            <ul class="grid__list">
+                                <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
+                                    Treści na strony internetowe, opisy produktów</span>
+                                </li>
+                                <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
+                                    Prowadzenie blogów firmowych</span>
+                                </li>
+                                <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
+                                    Storytelling</span>
+                                </li>
+                                <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
+                                    E-booki</span>
+                                </li>
+                                <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
+                                    Treści do newsletterów</span>
+                                </li>
+                                <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
+                                    Strategie content marketingowe</span>
+                                </li>
+                                <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
+                                    Niestandardowe działania<br>
+                                    (np. treści ulotek)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid__item">
+                            <h4 class="grid__item-title">Google Ads</h4>
+                            <ul class="grid__list">
+                                <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
+                                    Kampanie w searchu</span>
+                                </li>
+                                <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
+                                    Kampanie display i video</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid__item">
+                            <h4 class="grid__item-title">Naming</h4>
+                            <ul class="grid__list">
+                                <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
+                                    Startujące firmy</span>
+                                </li>
+                                <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
+                                    Nowe produkty</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -281,7 +295,7 @@
                     </div>
                     
                     <label for="story">Treść*:</label>
-                    <textarea class="contacts__item text-area" id="story" name="story" rows="5"></textarea>
+                    <textarea class="contacts__item text-area" id="story" name="story" rows="10"></textarea>
                     <button class="submit-btn footer-btn btn-arrow" type="submit">Wyślij zgłoszenie</button>
 
                 </form>
@@ -293,7 +307,16 @@
                 <a href="">monika.ochal@digital-win.pl</a>|
                 <a href="">730 803 629</a>
             </div>
+
+            <div class="copyrights-mobile">
+                <a href="">Wszystkie prawa zastrzeżone 2022</a>
+                <a href="">digital-win.pl</a>
+                <a href="">Polityka prywatności</a>
+                <a href="">monika.ochal@digital-win.pl</a>
+                <a href="">730 803 629</a>
+            </div>
         </footer>
     </div>
+    <a target="_blank" href="https://wizytowka.rzetelnafirma.pl/D9HLCALU" rel="nofollow"><img title="Kliknij i sprawdź status certyfikatu" alt="" src="https://aktywnybaner.rzetelnafirma.pl/ActiveBanner/GetActiveBannerImage/13/D9HLCALU" style="border:none;"></a>
 </body>
 </html>
