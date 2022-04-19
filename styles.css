@@ -716,6 +716,10 @@ body {
 } 
 @media (max-width: 768px)  {
 
+    .page__content {
+        margin-top: 53px;
+    }
+
     .description__title-win {
         margin-left: 24px;
     }
