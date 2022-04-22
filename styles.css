@@ -60,11 +60,11 @@ body {
     bottom: 25px;
     right: 25px;
     background: url('./images/phone-call.png') 0 0/cover no-repeat;
-    background-color: #fff;
     border-radius: 50%;
     display: block;
     width: 64px;
     height: 64px;
+    z-index: 1000;
 }
 
 .wrapper {
