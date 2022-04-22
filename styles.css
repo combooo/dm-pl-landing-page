@@ -57,8 +57,8 @@ body {
 
 .fixed-phone {
     position: fixed;
-    bottom: 15px;
-    right: 15px;
+    bottom: 25px;
+    right: 25px;
     background: url('./images/phone-call.png') 0 0/cover no-repeat;
     background-color: #fff;
     border-radius: 50%;
@@ -226,10 +226,6 @@ body {
 .form-header__input {
     border: none;
     padding: 10px;
-}
-
-form-header__input._error {
-    box-shadow: 0 0 15px red;
 }
 
 .submit-btn {
