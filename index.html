@@ -14,6 +14,7 @@
 </head>
 <body>
     <!-- menu bar -->
+    <span class="fixed-phone"></span>
     <nav class="menu">
         <div class="menu__container">
             <img class="menu__logo" src="./images/logo.png" alt="logo">
@@ -70,11 +71,11 @@
     
                     <div class="form-header">
                         <h3 class="form-header__title">Zgłoś się do mnie od razu!</h3>
-                        <form class="form-header__fields" action="">
-                            <label class="form-header__label" for="fname">Imię i nazwisko*:</label><br>
-                            <input class="form-header__input" type="text" id="fname" name="fname" value=""><br>
-                            <label class="form-header__label" for="lname">Email/telefon*:</label><br>
-                            <input class="form-header__input" type="text" id="lname" name="lname" value="">
+                        <form id='form-header' class="form-header__fields" action="mail.php" method="POST">
+                            <label class="form-header__label" for="header-name">Imię i nazwisko*:</label><br>
+                            <input class="form-header__input _req" type="text" id="header-name" name="Name" value=""><br>
+                            <label class="form-header__label" for="header-email">Email/telefon*:</label><br>
+                            <input class="form-header__input _req" type="text" id="header-email" name="email" value="">
 
                             <button class="submit-btn btn-arrow" type="submit">Prześlij kontakt</button>
 

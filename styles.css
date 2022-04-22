@@ -55,6 +55,18 @@ body {
     box-sizing: border-box;
 }
 
+.fixed-phone {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: url('./images/phone-call.png') 0 0/cover no-repeat;
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+
 .wrapper {
     max-width: 1256px;
     margin: 0 auto;
@@ -214,6 +226,10 @@ body {
 .form-header__input {
     border: none;
     padding: 10px;
+}
+
+form-header__input._error {
+    box-shadow: 0 0 15px red;
 }
 
 .submit-btn {
