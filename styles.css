@@ -729,11 +729,19 @@ body {
 @media (max-width: 768px)  {
 
     .page__content {
-        margin-top: 90px;
+        margin-top: 54px;
+    }
+
+    .description__title {
+        padding: 0;
     }
 
     .description__title-win {
         margin-left: 24px;
+    }
+
+    .description__subtitle {
+        margin: 12px auto;
     }
 
     .wrapper {
