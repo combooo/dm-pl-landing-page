@@ -7,11 +7,11 @@
 
     $mail = new PHPMailer(true);
     $mail->CharSet = 'UTF-8';
-    $mail->setLanguage('pl', 'phpmailer/language/');
+    $mail->setLanguage('en', 'phpmailer/language/');
     $mail->IsHTML(true);
 
     //from
-    $mail->setFrom('info@fls.guru', 'NameOfSender');
+    $mail->setFrom('sokvitko@gmail.com', 'NameOfSender');
     //receiver
     $mail->addAddress('sokvitko@gmail.com');
     //topic
