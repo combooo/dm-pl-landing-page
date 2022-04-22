@@ -765,6 +765,7 @@ body {
     }
 
     .photo {
+        display: none;
         width: 280px;
         height: 408px;
     }
