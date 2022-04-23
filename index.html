@@ -17,7 +17,7 @@
     <a href="tel:730803629" class="fixed-phone"></a>
     <nav class="menu">
         <div class="menu__container">
-            <img class="menu__logo" src="./images/logo.png" alt="logo">
+            <a href="#"><img class="menu__logo" src="./images/logo.png" alt="logo"></a>
             <div class="burger">
                 <span class="burger__line burger__line-first"></span>
                 <span class="burger__line burger__line-second"></span>
@@ -67,32 +67,23 @@
                         <span class="description__title-digital">Digital</span> marketing to <br>
                         <span class="description__title-win">Win</span> in your business
                     </h1>
-                    <p class="description__subtitle">Jesteś zainteresowany współpracą?</p>
+                    <p class="description__subtitle">Chcesz promować firmę i zwiększać zyski?</p>
     
                     <div class="form-header">
-                        <h3 class="form-header__title">Zgłoś się do mnie od razu!</h3>
+                        <h3 class="form-header__title">Nie czekaj, zapytaj o wycenę już teraz!</h3>
                         <form id='form-header' class="form-header__fields" action="mail.php" method="POST">
                             <label class="form-header__label" for="header-name">Imię i nazwisko*:</label><br>
-                            <input class="form-header__input _req" type="text" id="header-name" name="Name" value=""><br>
+                            <input class="form-header__input _req" type="text" id="header-name" name="header-name" value=""><br>
                             <label class="form-header__label" for="header-email">Email/telefon*:</label><br>
-                            <input class="form-header__input _req" type="text" id="header-email" name="email" value="">
-
+                            <input class="form-header__input _req" type="text" id="header-email" name="header-email" value="">
                             <button class="submit-btn btn-arrow" type="submit">Prześlij kontakt</button>
                         </form>
-<!-- this is a test form -->
-                        <form action="send.php" method="post">
-                            Ваше имя <input type="text" name="first_name"><br>
-                            Email: <input type="text" name="email" required placeholder="Обязательное поле"><br>
-                            Номер телефона: <input type="text" name="phone"><br>
-                            Сообщение:<br><textarea rows="5" name="message" cols="30"></textarea><br>
-                            <input type="submit" name="submit" value="Submit">
-                            </form>
                     </div>
                 </div>
             </div>
     
             <div class="question">
-                <h3 class="question__title">Potrzebujesz zawrzeć więcej szczegołów?</h3>
+                <h3 class="question__title">Masz czas, aby zawrzeć więcej szczegółów?</h3>
                 <a class="submit-btn btn-arrow" href="">Wypełnij formularz</a>
             </div>
         </header>
@@ -105,7 +96,7 @@
             <section class="services">
                 <div class="wrapper">
                     <p class="services__subtitle">POZNAJ MOJE USŁUGI</p>
-                    <h3 class="services__title">Strategia marketingowa dla Twojej firmy</h3>
+                    <h3 class="services__title">Marketing na miarę Twoich potrzeb</h3>
 
                     <div class="grid">
                         <div class="grid__item">
@@ -113,38 +104,37 @@
                             <ul class="grid__list">
                                 <li class="grid__list-item">
                                     <span class="marker"></span> <span class="list-content">
-                                        Prowadzenie kont na portalach<br>
-                                    FB, IG, TT, TikTok, Li, Yt
+                                        Atrakcyjne prowadzenie profili na Facebooku, Instagramie, LinkedInie, Twitter i YouTube
                                     </span>
                                 </li>
                                 <li class="grid__list-item">
                                     <span class="marker"></span> <span class="list-content">
-                                        Prowadzenie kampanii Facebook Ads
+                                        Strategia obecności marki w mediach społecznościowych
                                     </span>
                                 </li>
                                 <li class="grid__list-item">
                                     <span class="marker"></span> <span class="list-content">
-                                        Strategie obecności marki w mediach społecznościowych
+                                        Kampanie Facebook Ads, które sprzedają
                                     </span>
                                 </li>
                                 <li class="grid__list-item">
                                     <span class="marker"></span> <span class="list-content">
-                                        Audyty stron i konsultacje social media
+                                        Audyt kont reklamowych, profili oraz konsultacje
                                     </span>
                                 </li>
                                 <li class="grid__list-item">
                                     <span class="marker"></span> <span class="list-content">
-                                        Dedykowane szkolenia social media
+                                        Dedykowane szkolenia z zakresu social media
                                     </span>
                                 </li>
                                 <li class="grid__list-item">
                                     <span class="marker"></span> <span class="list-content">
-                                        Koncepcyjne kreatywne kampanii
+                                        Koncepcje kreatywnych kampanii
                                     </span>
                                 </li>
                                 <li class="grid__list-item">
                                     <span class="marker"></span> <span class="list-content">
-                                        Transmisje live, konkursy
+                                        Rozwój grup, konkursy, transmisje live i współprace z influencerami
                                     </span>
                                 </li>
                             </ul>
@@ -180,21 +170,33 @@
                             <h4 class="grid__item-title">Google Ads</h4>
                             <ul class="grid__list">
                                 <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
-                                    Kampanie w searchu</span>
+                                    kampanie w sieci wyszukiwania (search)</span>
                                 </li>
                                 <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
-                                    Kampanie display i video</span>
+                                    kampanie produktowe (PLA)</span>
+                                </li>
+                                <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
+                                    kampanie graficzne (GDN)</span>
+                                </li>
+                                <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
+                                    kampanie video</span>
                                 </li>
                             </ul>
                         </div>
                         <div class="grid__item">
-                            <h4 class="grid__item-title">Naming</h4>
+                            <h4 class="grid__item-title">Kreacja</h4>
                             <ul class="grid__list">
                                 <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
-                                    Startujące firmy</span>
+                                    tworzenie stron internetowych</span>
                                 </li>
                                 <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
-                                    Nowe produkty</span>
+                                    wdrażanie analityki internetowej</span>
+                                </li>
+                                <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
+                                    identyfikacja wizualna</span>
+                                </li>
+                                <li class="grid__list-item"><span class="marker"></span> <span class="list-content">
+                                    ulotki, plakaty, etykiety i więcej</span>
                                 </li>
                             </ul>
                         </div>
@@ -213,16 +215,16 @@
                     <h3 class="about__title">Nazywam się 
                         <span class="about__title-monika">Monika Ochal</span>
                     </h3>
-                    <p class="about__description">Blisko 7 lat doświadczenia w różnych dziedzinach marketingu pozwala prowadzić efektowne działania dla Klientów. Stały rozwój i wysoka poprzeczka mnie napędzają, a wyróżnia profesjonalizm.</p>
-                    <p class="about__description">Studia ukończyłam z podwójnym wyróżnieniem na kierunku psychologia ze specjalizacją marketing i reklama. Dzięki temu znam bardzo dobrze wiele mechanizmów, którymi rządzi się psychika człowieka i mogę wdrażać działania, które odnoszą skutek.</p>
-                    <p class="about__description">Posiadam międzynarodowy certyfikat DIMAQ Professional akredytowany przez IAB. Potwierdza on wiedzę z 12 dziedzin e-marketingu, co daje szeroką perspektywę działań.</p>
+                    <p class="about__description">Jestem właścicielem i osobą zarządzającą projektami w Digital Win. Blisko 8 lat doświadczenia zdobywanego u boku największych marek pozwala realizować działania, które przynoszą efekty. Stały rozwój i wysoka poprzeczka napędzają mnie do pracy.</p>
+                    <p class="about__description">Studia ukończyłam z podwójnym wyróżnieniem na kierunku psychologia ze specjalizacją marketing i reklama. Dzięki temu znam bardzo dobrze wiele mechanizmów, którymi rządzi się psychika człowieka i mogę dopasować efektywne działania</p>
+                    <p class="about__description">Posiadam międzynarodowy certyfikat DIMAQ akredytowany przez IAB. Potwierdza on wiedzę z 12 dziedzin e-marketingu, co daje szeroką perspektywę działań</p>
 
                     <p class="about__description about__contacts">
                         <span class="about__email">
-                            monika.ochal@digital-win.pl
+                            biuro@digital-win.pl
                         </span>
                         <span class="about__phone">
-                            730 803 629
+                            <a href="tel:730803629">730 803 629</a>
                         </span>
                     </p>
 
@@ -340,5 +342,7 @@
         </footer>
     </div>
     <a class="certyfikat" target="_blank" href="https://wizytowka.rzetelnafirma.pl/D9HLCALU" rel="nofollow"><img title="Kliknij i sprawdź status certyfikatu" alt="" src="https://aktywnybaner.rzetelnafirma.pl/ActiveBanner/GetActiveBannerImage/13/D9HLCALU" style="border:none;"></a>
+
+    <button>Darmowa wycena</button>
 </body>
 </html>

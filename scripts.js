@@ -1,5 +1,3 @@
-'use strict'
-
 (function() {
     const burger = document.querySelector('.burger');
     const menu = document.querySelector('.menu__list-mobile');
