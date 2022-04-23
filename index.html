@@ -14,7 +14,6 @@
 </head>
 <body>
     <!-- menu bar -->
-    <a href="tel:+78142332211">730803629</a>
     <a href="tel:730803629" class="fixed-phone"></a>
     <nav class="menu">
         <div class="menu__container">
@@ -79,8 +78,15 @@
                             <input class="form-header__input _req" type="text" id="header-email" name="email" value="">
 
                             <button class="submit-btn btn-arrow" type="submit">Prześlij kontakt</button>
-
                         </form>
+<!-- this is a test form -->
+                        <form action="send.php" method="post">
+                            Ваше имя <input type="text" name="first_name"><br>
+                            Email: <input type="text" name="email" required placeholder="Обязательное поле"><br>
+                            Номер телефона: <input type="text" name="phone"><br>
+                            Сообщение:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+                            <input type="submit" name="submit" value="Submit">
+                            </form>
                     </div>
                 </div>
             </div>
