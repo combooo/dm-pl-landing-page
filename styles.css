@@ -55,29 +55,20 @@ body {
     box-sizing: border-box;
 }
 
-
-
-
-/* modal window */
 .modal {
     margin: 0;
     position: fixed;
-    /* фиксированное положение */
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.5);
-    /* цвет фона */
     z-index: 1050;
     opacity: 0;
-    /* по умолчанию модальное окно прозрачно */
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
-    /* анимация перехода */
     pointer-events: none;
-    /* элемент невидим для событий мыши */
 }
 
 .modal-form {
@@ -89,28 +80,19 @@ body {
 .modal-body textarea {
     margin-bottom: 26px;
 }
-  /* при отображении модального окно */
+
 .modal:target {
     opacity: 1;
     pointer-events: auto;
     overflow-y: auto;
 }
 
-  /* ширина модального окна и его отступы от экрана */
 .modal-dialog {
     position: relative;
     width: auto;
     margin: 20px;
 }
 
-@media (min-width: 576px) {
-    .modal-dialog {
-        max-width: 500px;
-        margin: 30px auto;
-    }
-}
-
-  /* свойства для блока, содержащего контент модального окна */
 .modal-content {
     position: relative;
     display: -webkit-box;
@@ -130,14 +112,6 @@ body {
     outline: 0;
 }
 
-@media (min-width: 768px) {
-    .modal-content {
-        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-    }
-}
-
-  /* свойства для заголовка модального окна */
 .modal-header {
     display: -webkit-box;
     display: -webkit-flex;
@@ -165,7 +139,6 @@ body {
     font-weight: 500;
 }
 
-/* свойства для кнопки "Закрыть" */
 .close {
     float: right;
     font-family: sans-serif;
@@ -178,7 +151,6 @@ body {
     text-decoration: none;
 }
 
-/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
 .close:focus,
 .close:hover {
     color: #000;
@@ -187,7 +159,6 @@ body {
     opacity: .75;
 }
 
-/* свойства для блока, содержащего основное содержимое окна */
 .modal-body {
     background: linear-gradient(270deg, #FFF3EC 0%, #FFF5EF 99.99%, rgba(255, 237, 226, 0) 100%);
     position: relative;
@@ -198,7 +169,20 @@ body {
     padding: 15px;
     overflow: auto;
 }
-/* */
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 30px auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    }
+}
 
 .fixed-phone {
     position: fixed;
@@ -714,6 +698,16 @@ body {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
+}
+
+.checkbox-wrapper {
+    margin-bottom: 46px;
+}
+
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
 }
 
 .contacts__item:focus {

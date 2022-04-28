@@ -32,10 +32,10 @@
                     <a href="#services" class="menu__link">W TYM POMOGĘ</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">CO ZYSKUJESZ</a>
+                    <a href="#checklist" class="menu__link">CO ZYSKUJESZ</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">MOJE BIO</a>
+                    <a href="#bio" class="menu__link">MOJE BIO</a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__button" href="#openModal">DARMOWA WYCENA</a>
@@ -49,13 +49,13 @@
                 <a href="#services" class="menu__link">W TYM POMOGĘ</a>
             </li>
             <li class="menu__item">
-                <a href="#" class="menu__link">CO ZYSKUJESZ</a>
+                <a href="#checklist" class="menu__link">CO ZYSKUJESZ</a>
             </li>
             <li class="menu__item">
                 <a href="#bio" class="menu__link">MOJE BIO</a>
             </li>
             <li class="menu__item">
-                <a class="menu__button" href="#">BEZPŁATNA WYCENA</a>
+                <a class="menu__button" href="#openModal">BEZPŁATNA WYCENA</a>
             </li>
         </ul>
     </nav>
@@ -240,7 +240,7 @@
                 </div>
             </section>
         </div>
-            <div class="checklist">
+            <div id="checklist" class="checklist">
                 <div class="wrapper">
                     <div class="checklist-container">
                         <div class="checklist__left">
@@ -307,7 +307,7 @@
 
                                 <label for="lname">Zakres usług*:</label>
                                 <input class="contacts__item" type="text" id="lname" name="lname" value="">
-
+                                
                                 <label for="lname">Preferuję kontakt:</label>
                                 <input class="contacts__item" type="text" id="lname" name="lname" value="">
                             </div>
@@ -363,6 +363,7 @@
 
     <!-- modal -->
 
+
     <div class="modal-container">
         <div id="openModal" class="modal">
             <div class="modal-dialog">
@@ -373,8 +374,8 @@
                         </h3>
                         <a href="#close" title="Close" class="close">×</a>
                     </div>
-            <div class="modal-body">
-                <form class="form-container" action="">
+                    <div class="modal-body">
+                    <form class="form-container" action="">
                     <div class="modal-form">
                             <label for="fname">Imię i nazwisko*:</label>
                             <input class="contacts__item" type="text" id="fname" name="fname" value="">
@@ -399,11 +400,27 @@
                     <textarea class="contacts__item text-area" id="story" name="story" rows="10"></textarea>
                     <button class="submit-btn footer-btn btn-arrow" type="submit">Wyślij zgłoszenie</button>
 
-                </form>
-              </div>
+                    </form>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
+
+
+
+    <!-- popup 2 -->
+
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close">x</a>
+                <div class="popup__title">Title</div>
+                <div class="popup__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores totam autem error vero ex ut molestias deserunt ad beatae est ipsa, repellendus impedit! Voluptatem explicabo modi non iusto, expedita repudiandae!
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
