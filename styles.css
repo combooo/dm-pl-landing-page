@@ -975,6 +975,10 @@ body {
         height: 352px;
     }
 
+    .about__side {
+        margin: 0;
+    }
+
     .photo__image-wrap {
         width: 266px;
         height: 352px;
