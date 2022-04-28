@@ -55,6 +55,151 @@ body {
     box-sizing: border-box;
 }
 
+
+
+
+/* modal window */
+.modal {
+    margin: 0;
+    position: fixed;
+    /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* цвет фона */
+    z-index: 1050;
+    opacity: 0;
+    /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    /* анимация перехода */
+    pointer-events: none;
+    /* элемент невидим для событий мыши */
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body input,
+.modal-body textarea {
+    margin-bottom: 26px;
+}
+  /* при отображении модального окно */
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+
+  /* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 20px;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 30px auto;
+    }
+}
+
+  /* свойства для блока, содержащего контент модального окна */
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    }
+}
+
+  /* свойства для заголовка модального окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+    background: linear-gradient(270deg, #506276 0%, #334355 100%);
+}
+
+.modal-title {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus,
+.close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+    background: linear-gradient(270deg, #FFF3EC 0%, #FFF5EF 99.99%, rgba(255, 237, 226, 0) 100%);
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+/* */
+
 .fixed-phone {
     position: fixed;
     bottom: 25px;
@@ -518,6 +663,16 @@ body {
     line-height: 26px;
 }
 
+.keywords-wrapper {
+    color: #fff;
+    background: linear-gradient(90deg, #334355 0%, #4D596A 87.63%);
+}
+
+.keywords p {
+    padding-top: 1.2rem;
+    line-height: 1.5rem;
+}
+
 .copyrights {
     display: flex;
     justify-content: space-around;
@@ -525,6 +680,7 @@ body {
 }
 
 .copyrights-mobile {
+    padding: 64px 0;
     display: none;
 }
 
@@ -533,23 +689,36 @@ body {
 }
 
 .copyrights a {
+    color: #fff;
     padding: 0 8px;
     white-space: nowrap;
 }
 
 .contacts {
     margin-top: 80px;
+    margin-bottom: 80px;
     background: linear-gradient(270deg, #FFF3EC 0%, #FFF5EF 99.99%, rgba(255, 237, 226, 0) 100%);
     box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.05);
     padding: 70px
 }
 
 .contacts__item {
+    font-size: 1rem;
+    color: #334355;
     display: block;
-    padding: 7px;
+    padding: 10px;
     margin-bottom: 46px;
     margin-top: 5px;
-    border: none;
+    box-sizing: border-box;
+    border: 3px solid #FFF4ED;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.contacts__item:focus {
+    border: 3px solid #ffd0b3;
+    /* outline: 3px solid rgb(238, 185, 172); */
 }
 
 .contacts__title {
@@ -567,6 +736,7 @@ body {
 
 .text-area {
     width: 0 auto;
+    resize: none;
 }
 
 .form-container {
@@ -744,6 +914,7 @@ body {
     }
 
     .copyrights-mobile a {
+        color: #fff;
         display: block;
         padding: 16px;
     }
