@@ -45,7 +45,7 @@ table {
 /*styles*/
 
 .menu__phone {
-    padding-right: 40px;
+    padding-right: 28px;
     position: relative;
     width: 64px;
     height: 64px;
@@ -65,9 +65,9 @@ table {
     position: absolute;
     content: '';
     right: 0;
-    top: -8px;
-    width: 36px;
-    height: 36px;
+    top: -1px;
+    width: 22px;
+    height: 22px;
     background-size: cover;
     background: url('./images/phone-call.png') 0 0/cover no-repeat;
 }
@@ -82,6 +82,10 @@ body {
     color: #334355;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+}
+
+.modal-dialog {
+    overflow-y: hidden;
 }
 
 .modal {
@@ -599,8 +603,20 @@ body {
     left: -26px;
 }
 
+#checklist {
+    height: 26px;
+}
 .checklist {
+    padding: 24px;
     background: linear-gradient(90deg, #334355 0%, #4D596A 87.63%);
+}
+
+.checklist-header__title {
+    color: #fff;
+    padding: 56px 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
 }
 
 .checklist__title {
@@ -614,17 +630,21 @@ body {
     color: #fff;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 80px 0;
+    padding: 0 0 38px 0;
 }
 
-.checklist__left {
+.checklist__section {
+    padding: 26px;
     flex: 1;
 }
 
-.checklist__right {
-    flex: 1;
+.checklist__section p{
+    line-height: 1.6rem;
+    margin-top: 18px;
 }
+/* .checklist__right {
+    flex: 1;
+} */
 
 .checklist__item {
     margin: 30px 0;

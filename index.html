@@ -247,12 +247,16 @@
                 </div>
             </section>
         </div>
-            <div id="checklist" class="checklist">
+        <div id="checklist"></div>
+            <div class="checklist">
                 <div class="wrapper">
+                    <h2 class="checklist-header__title">Docenisz nas za…</h2>
                     <div class="checklist-container">
-                        <div class="checklist__left">
-                            <h3 class="checklist__title">Czeka na Ciebie:</h3>
-                            <ul class="checklist__list">
+                        <div class="checklist__section">
+                            <h3 class="checklist__title">
+                                Transparentność</h3>
+                            <p>Doskonale wiesz, za co płacisz. Otrzymujesz bieżący update dotyczący wyników, comiesięczny raport i nie musisz bać się podejmowania działań bez Twojej akceptacji. </p>
+                            <!-- <ul class="checklist__list">
                                 <li class="checklist__item">
                                     Wzrost zapytań ofertowych
                                 </li>
@@ -268,11 +272,13 @@
                                 <li class="checklist__item">
                                     Wzrost przychodów i rozwój biznesu
                                 </li>
-                            </ul>
+                            </ul> -->
                         </div>
-                        <div class="checklist__right">
-                            <h3 class="checklist__title">Na co możesz liczyć:</h3>
-                            <ul class="checklist__list">
+                        <div class="checklist__section">
+                            <h3 class="checklist__title">
+                                Bezproblemowy kontakt</h3>
+                            <p>Płaska struktura agencji, bezpośredni kontakt z osobą prowadzącą kampanie, dyspozycyjność w dni robocze i elastyczna forma kontaktu. </p>
+                            <!-- <ul class="checklist__list">
                                 <li class="checklist__item">
                                     Wysoką jakość usług
                                 </li>
@@ -288,7 +294,12 @@
                                 <li class="checklist__item">
                                     Brak amatorskich działań
                                 </li>
-                            </ul>
+                            </ul> -->
+                        </div>
+                        <div class="checklist__section">
+                            <h3 class="checklist__title">
+                                Skuteczność</h3>
+                            <p>Którą potwierdzają osiągane wyniki. Działania zgodne są trendami i uwzględniają działanie algorytmu.</p> 
                         </div>
                     </div>
                 </div>
@@ -312,11 +323,47 @@
                                 <label for="fname">Imię i nazwisko*:</label>
                                 <input class="contacts__item" type="text" id="fname" name="fname" value="">
 
-                                <label for="lname">Zakres usług*:</label>
-                                <input class="contacts__item" type="text" id="lname" name="lname" value="">
+                                <!-- <label for="lname">Zakres usług*:</label>
+                                <input class="contacts__item" type="text" id="lname" name="lname" value=""> -->
+<label for="select-service">Zakres usług*:</label>
+<select id="select-service" class="contacts__item" name="select-service">
+    <option value="Prowadzenie social media">
+        Prowadzenie social media
+    </option>
 
-                                <label for="lname">Preferuję kontakt:</label>
-                                <input class="contacts__item" type="text" id="lname" name="lname" value="">
+    <option value="Kampanie Facebook Ads">
+        Kampanie Facebook Ads
+    </option>
+
+    <option value="Kampanie Google Ads">
+        Kampanie Google Ads
+    </option>
+
+    <option value="Content marketing">
+        Content marketing
+    </option>
+
+    <option value="Strony internetowe">
+        Strony internetowe
+    </option>
+
+    <option value="Kreacje graficzne">
+        Kreacje graficzne
+    </option>
+</select>
+
+                                <!-- <label for="lname">Preferuję kontakt:</label>
+                                <input class="contacts__item" type="text" id="lname" name="lname" value=""> -->
+<label for="prefer-contact">Preferuję kontakt:</label>
+<select id="prefer-contact" class="contacts__item" name="prefer-contact">
+    <option value="Email">
+        Email
+    </option>
+
+    <option value="Phone">
+        Phone
+    </option>
+</select>
                             </div>
                             <div class="form-container">
                                 <label for="fname">Email*:</label>
@@ -387,11 +434,47 @@
                             <label for="fname">Imię i nazwisko*:</label>
                             <input class="contacts__item" type="text" id="fname" name="fname" value="">
 
-                            <label for="lname">Zakres usług*:</label>
-                            <input class="contacts__item" type="text" id="lname" name="lname" value="">
+                            <!-- <label for="lname">Zakres usług*:</label>
+                            <input class="contacts__item" type="text" id="lname" name="lname" value=""> -->
 
-                            <label for="lname">Preferuję kontakt:</label>
-                            <input class="contacts__item" type="text" id="lname" name="lname" value="">
+                            <label for="select-service">Zakres usług*:</label>
+                            <select id="select-service" class="contacts__item" name="select-service">
+                                <option value="Prowadzenie social media">
+                                    Prowadzenie social media
+                                </option>
+                            
+                                <option value="Kampanie Facebook Ads">
+                                    Kampanie Facebook Ads
+                                </option>
+                            
+                                <option value="Kampanie Google Ads">
+                                    Kampanie Google Ads
+                                </option>
+                            
+                                <option value="Content marketing">
+                                    Content marketing
+                                </option>
+                            
+                                <option value="Strony internetowe">
+                                    Strony internetowe
+                                </option>
+                            
+                                <option value="Kreacje graficzne">
+                                    Kreacje graficzne
+                                </option>
+                            </select>
+                        
+
+                            <label for="prefer-contact">Preferuję kontakt:</label>
+                            <select id="prefer-contact" class="contacts__item" name="prefer-contact">
+                                <option value="Email">
+                                    Email
+                                </option>
+                            
+                                <option value="Phone">
+                                    Phone
+                                </option>
+                            </select>
 
                             <label for="fname">Email*:</label>
                             <input class="contacts__item" type="text" id="fname" name="fname" value="">
@@ -413,5 +496,17 @@
             </div>
         </div>
     </div>
+
+<!--Supplement an id here instead of using 'name'-->
+    <label for="lname">Zakres usług*:</label>
+    <select id="select-service" name="contacts__item"> 
+        <option value="value1">Значение 1</option>
+        <option value="value2" selected>Значение 2</option>
+        <option value="value3">Значение 3</option>
+    </select>
+
+
+
+
 </body>
 </html>
