@@ -725,8 +725,9 @@ body {
 }
 
 .contacts__item {
-    font-size: 1rem;
+    font-size: .9rem;
     color: #334355;
+    font-family: 'Raleway', sans-serif;
     display: block;
     padding: 10px;
     margin-bottom: 46px;
@@ -750,7 +751,6 @@ body {
 
 .contacts__item:focus {
     border: 3px solid #ffd0b3;
-    /* outline: 3px solid rgb(238, 185, 172); */
 }
 
 .contacts__title {
@@ -1165,7 +1165,7 @@ body.lock {
 }
 
 .popup__content {
-    background: #fff;
+    background: linear-gradient(270deg, #FFF3EC 0%, #FFF5EF 99.99%, rgba(255, 237, 226, 0) 100%);
     color: #000;
     max-width: 800px;
     padding: 30px;
@@ -1185,6 +1185,12 @@ body.lock {
 }
 
 .popup__title {
-    font-size: 40px;
-    margin: 0px 0px 1em 0px;
+    font-size: 32px;
+    color: #334355;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 20px 1em 20px;
+}
+
+.popup .contacts__item {
+    margin-bottom: 20px;
 }
