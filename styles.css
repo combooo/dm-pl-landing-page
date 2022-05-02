@@ -394,6 +394,7 @@ body {
 }
 
 .submit-btn {
+    font-family: 'Raleway', sans-serif;
     display: block;
     background: linear-gradient(90deg, #334355 0%, #4D596A 87.63%);
     border: none;
@@ -700,6 +701,7 @@ body {
 .copyrights {
     display: flex;
     justify-content: space-around;
+    align-items:center;
     padding: 64px;
 }
 
@@ -856,7 +858,8 @@ body {
 }
 
 .certyfikat {
-    display: none;
+    float: right;
+    margin: 16px 0;
 }
 
 @media (max-width: 1320px) {
