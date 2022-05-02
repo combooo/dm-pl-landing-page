@@ -1,0 +1,31 @@
+.main-wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 66px 10px;
+}
+
+.title,
+.subtitle {
+    text-align: center;
+    padding: 10px;
+}
+
+ol {
+    list-style:decimal;
+}
+
+ol ol {
+    padding-left: 18px;
+}
+
+li {
+    line-height: 22px;
+}
+
+.ol-a {
+    list-style: lower-latin;
+}
+
+.main-wrap ol > li {
+    margin: 10px 0;
+}

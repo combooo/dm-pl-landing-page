@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Monika Ochal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="obsługa social media, kampanie Facebook Ads, kampanie Google Ads, prowadzenie profili w social media, content marketing, strategia marketingu, strategia marki w social media">
     <meta name="description" content="Digital marketing to Win in your business">
@@ -12,9 +13,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script defer src="scripts.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KP3N7XB');
+    </script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
-    <div class="page-wrapper">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KP3N7XB"
+            height="0" 
+            width="0" 
+            style="display:none;visibility:hidden">
+    </iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="page-wrapper">
     <!-- menu bar -->
     <a href="tel:730803629" class="fixed-phone"></a>
     <nav id="menu" class="menu">
@@ -29,9 +58,7 @@
             <ul class="menu__list">
                 <li class="menu__item">
                     <a class="menu__phone" href="tel:730803629">
-                        <span>
-                            730 803 629</a>
-                        </span>
+                        <span>730 803 629</span>
                     </a>
                 </li>
                 <li class="menu__item">
@@ -81,13 +108,41 @@
                     <div class="form-header">
                         <h3 class="form-header__title">Nie czekaj,<br>
                             zapytaj o wycenę już teraz!</h3>
-                        <form id='form-header' class="form-header__fields" action="mail.php" method="POST">
-                            <label class="form-header__label" for="header-name">Imię i nazwisko*:</label><br>
-                            <input class="form-header__input _req" type="text" id="header-name" name="header-name" value=""><br>
-                            <label class="form-header__label" for="header-email">Email/telefon*:</label><br>
-                            <input class="form-header__input _req" type="text" id="header-email" name="header-email" value="">
-                            <button class="submit-btn btn-arrow" type="submit">Prześlij kontakt</button>
+<!-- form header -->
+                        <form 
+                            id='form-header' 
+                            class="form-header__fields" 
+                            action="little-form-handler.php" 
+                            method="POST">
+
+                            <label class="form-header__label" for="client_name">
+                                Imię i nazwisko<span class="red-star">*</span>:
+                            </label>
+                            <br>
+                            <input 
+                                class="form-header__input"
+                                type="text"
+                                id="client_name"
+                                name="client_name"
+                                required>
+                            <br>
+
+                            <label class="form-header__label" for="client_contact">
+                                Email/telefon<span class="red-star">*</span>:
+                            </label>
+                            <br>
+                            <input 
+                                class="form-header__input"
+                                type="text"
+                                id="client_contact"
+                                name="client_contact"
+                                required>
+
+                            <button class="submit-btn btn-arrow" type="submit">
+                                Prześlij kontakt
+                            </button>
                         </form>
+<!-- form header end -->
                     </div>
                 </div>
             </div>
@@ -255,45 +310,11 @@
                             <h3 class="checklist__title">
                                 Transparentność</h3>
                             <p>Doskonale wiesz, za co płacisz. Otrzymujesz bieżący update dotyczący wyników, comiesięczny raport i nie musisz bać się podejmowania działań bez Twojej akceptacji. </p>
-                            <!-- <ul class="checklist__list">
-                                <li class="checklist__item">
-                                    Wzrost zapytań ofertowych
-                                </li>
-                                <li class="checklist__item">
-                                    Wzrost odwiedzin strony www
-                                </li>
-                                <li class="checklist__item">
-                                    Wzrost wizyt stacjonarnych
-                                </li>
-                                <li class="checklist__item">
-                                    Budowa zaangażowanej społeczności
-                                </li>
-                                <li class="checklist__item">
-                                    Wzrost przychodów i rozwój biznesu
-                                </li>
-                            </ul> -->
                         </div>
                         <div class="checklist__section">
                             <h3 class="checklist__title">
                                 Bezproblemowy kontakt</h3>
                             <p>Płaska struktura agencji, bezpośredni kontakt z osobą prowadzącą kampanie, dyspozycyjność w dni robocze i elastyczna forma kontaktu. </p>
-                            <!-- <ul class="checklist__list">
-                                <li class="checklist__item">
-                                    Wysoką jakość usług
-                                </li>
-                                <li class="checklist__item">
-                                    Merytoryczną wiedzę
-                                </li>
-                                <li class="checklist__item">
-                                    Uczciwość i rzetelność
-                                </li>
-                                <li class="checklist__item">
-                                    Eksperta będącego na bieżąco z trendami
-                                </li>
-                                <li class="checklist__item">
-                                    Brak amatorskich działań
-                                </li>
-                            </ul> -->
                         </div>
                         <div class="checklist__section">
                             <h3 class="checklist__title">
@@ -315,72 +336,92 @@
 
                 <div class="contacts">
                     <h3 class="contacts__title">Wypełnij formularz kontaktowy</h3>
-                    <form class="form-container" action="">
-                        <div class="form-container-row">
-                            <div class="form-container">
-
-                                <label for="fname">Imię i nazwisko*:</label>
-                                <input class="contacts__item" type="text" id="fname" name="fname" value="">
-
-                                <!-- <label for="lname">Zakres usług*:</label>
-                                <input class="contacts__item" type="text" id="lname" name="lname" value=""> -->
-<label for="select-service">Zakres usług*:</label>
-<select id="select-service" class="contacts__item" name="select-service">
-    <option value="Prowadzenie social media">
-        Prowadzenie social media
-    </option>
-
-    <option value="Kampanie Facebook Ads">
-        Kampanie Facebook Ads
-    </option>
-
-    <option value="Kampanie Google Ads">
-        Kampanie Google Ads
-    </option>
-
-    <option value="Content marketing">
-        Content marketing
-    </option>
-
-    <option value="Strony internetowe">
-        Strony internetowe
-    </option>
-
-    <option value="Kreacje graficzne">
-        Kreacje graficzne
-    </option>
-</select>
-
-                                <!-- <label for="lname">Preferuję kontakt:</label>
-                                <input class="contacts__item" type="text" id="lname" name="lname" value=""> -->
-<label for="prefer-contact">Preferuję kontakt:</label>
-<select id="prefer-contact" class="contacts__item" name="prefer-contact">
-    <option value="Email">
-        Email
-    </option>
-
-    <option value="Phone">
-        Phone
-    </option>
-</select>
-                            </div>
-                            <div class="form-container">
-                                <label for="fname">Email*:</label>
-                                <input class="contacts__item" type="text" id="fname" name="fname" value="">
-
-                                <label for="lname">Telefon:</label>
-                                <input class="contacts__item" type="text" id="lname" name="lname" value="">
+    
+<!-- big form -->
+            <form 
+                class="form-container" 
+                action="big-form-handler.php"
+                method="POST">
+                <div class="form-container-row">
+                    <div class="form-container">
+                        <label for="name">Imię i nazwisko<span class="red-star">*</span>:</label>
+                        <input 
+                            class="contacts__item"
+                            type="text"
+                            id="name"
+                            name="name" 
+                            required>
+                        <label for="select-service">Zakres usług<span class="red-star">*</span>:</label>
+                        <select 
+                            id="select-service" 
+                            class="contacts__item" 
+                            name="select-service">
+                            <option value="Prowadzenie social media">
+                                Prowadzenie social media
+                            </option>
+                            <option value="Kampanie Facebook Ads">
+                                Kampanie Facebook Ads
+                            </option>
+                            <option value="Kampanie Google Ads">
+                                Kampanie Google Ads
+                            </option>
+                            <option value="Content marketing">
+                                Content marketing
+                            </option>
+                            <option value="Strony internetowe">
+                                Strony internetowe
+                            </option>
+                            <option value="Kreacje graficzne">
+                                Kreacje graficzne
+                            </option>
+                        </select>
+                        <label for="prefer-contact">Preferuję kontakt:</label>
+                        <select 
+                            id="prefer-contact"
+                            class="contacts__item"
+                            name="prefer-contact">
+                            <option value="Email">
+                                Email
+                            </option>
+                            <option value="Phone">
+                                Phone
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-container">
+                        <label for="email">Email<span class="red-star">*</span>:</label>
+                        <input
+                            class="contacts__item"
+                            type="email"
+                            id="email"
+                            name="email"
+                            required>
+                        <label for="tel">Telefon:</label>
+                        <input 
+                            class="contacts__item"
+                            type="tel"
+                            id="tel"
+                            name="tel">
                                 
-                                <label for="lname">Link do strony:</label>
-                                <input class="contacts__item" type="text" id="lname" name="lname" value="">
-                            </div>
-                        </div>
-                        
-                        <label for="story">Treść*:</label>
-                        <textarea class="contacts__item text-area" id="story" name="story" rows="10"></textarea>
-                        <button class="submit-btn footer-btn btn-arrow" type="submit">Wyślij zgłoszenie</button>
-
-                    </form>
+                        <label for="link">Link do strony:</label>
+                        <input 
+                            class="contacts__item"
+                            type="text"
+                            id="link"
+                            name="link">
+                    </div>
+                </div>
+                    <label for="message">Treść<span class="red-star">*</span>:</label>
+                    <textarea
+                        class="contacts__item text-area"
+                        id="message"
+                        name="message"
+                        rows="10"
+                        required>
+                    </textarea>
+                    <button class="submit-btn footer-btn btn-arrow" type="submit">Wyślij zgłoszenie</button>
+            </form>
+<!-- end big form -->
                 </div>
             </div>
             <div class="keywords-wrapper">
@@ -394,187 +435,119 @@
                         </p>
                     </div>
                     <div class="copyrights">
-                        <a href="">Wszystkie prawa zastrzeżone 2022</a>|
-                        <a href="">digital-win.pl</a>|
-                        <a href="">Polityka prywatności</a>|
-                        <a href="">monika.ochal@digital-win.pl</a>|
-                        <a href="">730 803 629</a>
+                        <span>Wszystkie prawa zastrzeżone 2022</span>
+                        <a href="https://www.digital-win.pl/">digital-win.pl</a>
+                        <a href="politika.html">Polityka prywatności</a>
+                        <span>monika.ochal@digital-win.pl</span>
+                        <a href="tel:730803629">730 803 629</a>
                     </div>
 
                     <div class="copyrights-mobile">
-                        <a href="">Wszystkie prawa zastrzeżone 2022</a>
-                        <a href="">digital-win.pl</a>
-                        <a href="">Polityka prywatności</a>
-                        <a href="">monika.ochal@digital-win.pl</a>
+                        <span>Wszystkie prawa zastrzeżone 2022</span>
+                        <a href="https://www.digital-win.pl/">digital-win.pl</a>
+                        <a href="politika.html">Polityka prywatności</a>
+                        <span>monika.ochal@digital-win.pl</span>
                         <a href="tel:730803629">730 803 629</a>
                     </div>
                 </div>
             </div>
         </footer>
-    
-    <a class="certyfikat" target="_blank" href="https://wizytowka.rzetelnafirma.pl/D9HLCALU" rel="nofollow"><img title="Kliknij i sprawdź status certyfikatu" alt="" src="https://aktywnybaner.rzetelnafirma.pl/ActiveBanner/GetActiveBannerImage/13/D9HLCALU" style="border:none;"></a>
-
-    <!-- modal -->
-
-
-    <div class="modal-container">
-        <div id="openModal" class="modal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title">
-                            Wypełnij formularz kontaktowy
-                        </h3>
-                        <a href="#close" title="Close" class="close">×</a>
-                    </div>
-                    <div class="modal-body">
-                    <form class="form-container" action="">
-                    <div class="modal-form">
-                            <label for="fname">Imię i nazwisko*:</label>
-                            <input class="contacts__item" type="text" id="fname" name="fname" value="">
-
-                            <!-- <label for="lname">Zakres usług*:</label>
-                            <input class="contacts__item" type="text" id="lname" name="lname" value=""> -->
-
-                            <label for="select-service">Zakres usług*:</label>
-                            <select id="select-service" class="contacts__item" name="select-service">
-                                <option value="Prowadzenie social media">
-                                    Prowadzenie social media
-                                </option>
-                            
-                                <option value="Kampanie Facebook Ads">
-                                    Kampanie Facebook Ads
-                                </option>
-                            
-                                <option value="Kampanie Google Ads">
-                                    Kampanie Google Ads
-                                </option>
-                            
-                                <option value="Content marketing">
-                                    Content marketing
-                                </option>
-                            
-                                <option value="Strony internetowe">
-                                    Strony internetowe
-                                </option>
-                            
-                                <option value="Kreacje graficzne">
-                                    Kreacje graficzne
-                                </option>
-                            </select>
-                        
-
-                            <label for="prefer-contact">Preferuję kontakt:</label>
-                            <select id="prefer-contact" class="contacts__item" name="prefer-contact">
-                                <option value="Email">
-                                    Email
-                                </option>
-                            
-                                <option value="Phone">
-                                    Phone
-                                </option>
-                            </select>
-
-                            <label for="fname">Email*:</label>
-                            <input class="contacts__item" type="text" id="fname" name="fname" value="">
-
-                            <label for="lname">Telefon:</label>
-                            <input class="contacts__item" type="text" id="lname" name="lname" value="">
-                            
-                            <label for="lname">Link do strony:</label>
-                            <input class="contacts__item" type="text" id="lname" name="lname" value="">
-                    </div>
-                    
-                    <label for="story">Treść*:</label>
-                    <textarea class="contacts__item text-area" id="story" name="story" rows="5"></textarea>
-                    <button class="submit-btn footer-btn btn-arrow" type="submit">Wyślij zgłoszenie</button>
-
-                    </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<a class="certyfikat" target="_blank" href="https://wizytowka.rzetelnafirma.pl/D9HLCALU" rel="nofollow"><img title="Kliknij i sprawdź status certyfikatu" alt="" src="https://aktywnybaner.rzetelnafirma.pl/ActiveBanner/GetActiveBannerImage/13/D9HLCALU" style="border:none;"></a>
 
 </div>
 <!-- popup -->
-
 <div id="popup" class="popup">
     <div class="popup__body">
         <div class="popup__content">
-            <a href="#menu" class="popup__close close-popup">x</a>
+            <a href="#menu" class="popup__close close-popup">&times;</a>
             <h3 class="popup__title">Wypełnij formularz kontaktowy</h3>
-
-
             <div class="popup__text">
-
-                <form class="form-container" action="">
-                    <div class="modal-form">
-                            <label for="fname">Imię i nazwisko*:</label>
-                            <input class="contacts__item" type="text" id="fname" name="fname" value="">
-
-                            <!-- <label for="lname">Zakres usług*:</label>
-                            <input class="contacts__item" type="text" id="lname" name="lname" value=""> -->
-
-                            <label for="select-service">Zakres usług*:</label>
-                            <select id="select-service" class="contacts__item" name="select-service">
-                                <option value="Prowadzenie social media" >
-                                    Prowadzenie social media
-                                </option>
-                            
-                                <option value="Kampanie Facebook Ads">
-                                    Kampanie Facebook Ads
-                                </option>
-                            
-                                <option value="Kampanie Google Ads">
-                                    Kampanie Google Ads
-                                </option>
-                            
-                                <option value="Content marketing">
-                                    Content marketing
-                                </option>
-                            
-                                <option value="Strony internetowe">
-                                    Strony internetowe
-                                </option>
-                            
-                                <option value="Kreacje graficzne">
-                                    Kreacje graficzne
-                                </option>
-                            </select>
-                        
-
-                            <label for="prefer-contact">Preferuję kontakt:</label>
-                            <select id="prefer-contact" class="contacts__item" name="prefer-contact">
-                                <option value="Email">
-                                    Email
-                                </option>
-                            
-                                <option value="Phone">
-                                    Phone
-                                </option>
-                            </select>
-
-                            <label for="fname">Email*:</label>
-                            <input class="contacts__item" type="text" id="fname" name="fname" value="">
-
-                            <label for="lname">Telefon:</label>
-                            <input class="contacts__item" type="text" id="lname" name="lname" value="">
-                            
-                            <label for="lname">Link do strony:</label>
-                            <input class="contacts__item" type="text" id="lname" name="lname" value="">
+                <form 
+                class="form-container" 
+                action="big-form-handler.php"
+                method="POST">
+                <div class="form-container-row">
+                    <div class="form-container">
+                        <label for="popup-name">Imię i nazwisko<span class="red-star">*</span>:</label>
+                        <input 
+                            class="contacts__item"
+                            type="text"
+                            id="popup-name"
+                            name="name" 
+                            required>
+                        <label for="popup-select-service">Zakres usług<span class="red-star">*</span>:</label>
+                        <select 
+                            id="popup-select-service" 
+                            class="contacts__item" 
+                            name="select-service">
+                            <option value="Prowadzenie social media">
+                                Prowadzenie social media
+                            </option>
+                            <option value="Kampanie Facebook Ads">
+                                Kampanie Facebook Ads
+                            </option>
+                            <option value="Kampanie Google Ads">
+                                Kampanie Google Ads
+                            </option>
+                            <option value="Content marketing">
+                                Content marketing
+                            </option>
+                            <option value="Strony internetowe">
+                                Strony internetowe
+                            </option>
+                            <option value="Kreacje graficzne">
+                                Kreacje graficzne
+                            </option>
+                        </select>
+                        <label for="popup-prefer-contact">Preferuję kontakt:</label>
+                        <select 
+                            id="popup-prefer-contact"
+                            class="contacts__item"
+                            name="prefer-contact">
+                            <option value="Email">
+                                Email
+                            </option>
+                            <option value="Phone">
+                                Phone
+                            </option>
+                        </select>
                     </div>
-                    
-                    <label for="story">Treść*:</label>
-                    <textarea class="contacts__item text-area" id="story" name="story" rows="5"></textarea>
+                    <div class="form-container">
+                        <label for="popup-email">Email<span class="red-star">*</span>:</label>
+                        <input
+                            class="contacts__item"
+                            type="email"
+                            id="popup-email"
+                            name="email"
+                            required>
+                        <label for="popup-tel">Telefon:</label>
+                        <input 
+                            class="contacts__item"
+                            type="tel"
+                            id="popup-tel"
+                            name="tel">
+                                
+                        <label for="popup-link">Link do strony:</label>
+                        <input 
+                            class="contacts__item"
+                            type="text"
+                            id="popup-link"
+                            name="link">
+                    </div>
+                </div>
+                    <label for="popup-message">Treść<span class="red-star">*</span>:</label>
+                    <textarea
+                        class="contacts__item text-area"
+                        id="popup-message"
+                        name="message"
+                        rows="10"
+                        required></textarea>
                     <button class="submit-btn footer-btn btn-arrow" type="submit">Wyślij zgłoszenie</button>
-
-                    </form>
+            </form>
             </div>
         </div>
     </div>
 </div>
-
 <!-- popup -->
 </body>
 </html>

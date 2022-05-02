@@ -44,6 +44,11 @@ table {
 
 /*styles*/
 
+.red-star {
+    color: rgb(189, 33, 33);
+    font-weight: 800;
+}
+
 .menu__phone {
     padding-right: 28px;
     position: relative;
@@ -643,9 +648,6 @@ body {
     line-height: 1.6rem;
     margin-top: 18px;
 }
-/* .checklist__right {
-    flex: 1;
-} */
 
 .checklist__item {
     margin: 30px 0;
@@ -714,6 +716,7 @@ body {
     color: #fff;
     padding: 0 8px;
     white-space: nowrap;
+    text-decoration: none;
 }
 
 .contacts {
@@ -751,6 +754,10 @@ body {
 
 .contacts__item:focus {
     border: 3px solid #ffd0b3;
+}
+
+.contacts__item._error {
+    box-shadow: 0 0 15px red;
 }
 
 .contacts__title {
@@ -892,48 +899,6 @@ body {
     
 }
 
-/* @media (max-width: 960px)  {
-
-    .photo {
-        width: 380px;
-        height: 473px;
-    }
-    
-    .photo__image {
-        width: 380px;
-        height: 473px;
-        position: relative;
-        top: -26px;
-        left: -26px;
-    }
-
-    .description__title {
-        font-size: 1.8em;
-    }
-
-    .form-header__title {
-        margin: 0 0 24px;
-    }
-
-    .form-header__fields {
-        padding: 0 22px;
-    }
-
-    .about__description {
-        font-size: 1em;
-    }
-
-    .about__photo {
-        width: 366px;
-        height: 510px;
-    }
-
-    .photo__image-wrap {
-        width: 366px;
-        height: 510px;
-    }
-} */
-
 @media (max-width: 1024px)  {
     .menu__item,
     .menu__item .menu__button {
@@ -950,7 +915,9 @@ body {
         align-items: center;
     }
 
-    .copyrights-mobile a {
+    .copyrights-mobile a,
+    .copyrights-mobile span {
+        text-decoration: none;
         color: #fff;
         display: block;
         padding: 16px;
@@ -1117,7 +1084,6 @@ body {
 
 }
 
-
 /* popup */
 body.lock {
     overflow: hidden;
@@ -1176,12 +1142,17 @@ body.lock {
 }
 
 .popup__close {
+    line-height: 16px;
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    color: #000;
+    top: 15px;
+    right: 15px;
+    font-size: 44px;
+    color: #334355;
     text-decoration: none;
+}
+
+.popup__close:hover {
+    color:#33435594;
 }
 
 .popup__title {
