@@ -945,11 +945,11 @@ body {
     }
 
     .description__title {
-        padding: 0;
+        padding: 14px;
     }
 
     .description__title-win {
-        margin-left: 24px;
+        margin-left: 22px;
     }
 
     .description__subtitle {
@@ -1086,6 +1086,16 @@ body {
     }
 
 }
+
+@media (max-width: 412px) {
+    .description__title {
+        font-size: 2.0em;
+    }
+    .description__subtitle {
+        font-size: 1.1em;
+    }
+}
+
 
 /* popup */
 body.lock {
